@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Delta.NearAcademy.Student.Domain\Delta.NearAcademy.Student.Domain.csproj" />
+    <ProjectReference Include="..\Delta.NearAcademy.Student.Repository\Delta.NearAcademy.Student.Repository.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
