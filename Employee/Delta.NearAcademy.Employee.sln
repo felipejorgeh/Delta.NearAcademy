@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delta.NearAcademy.Employee.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delta.NearAcademy.Core.Domain", "..\Core\Delta.NearAcademy.Core.Domain\Delta.NearAcademy.Core.Domain.csproj", "{12091BB3-1FCC-610D-472E-0288C1BF3EB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delta.NearAcademy.Employee.Test", "Delta.NearAcademy.Employee.Test\Delta.NearAcademy.Employee.Test.csproj", "{F6A7B8C9-D0E1-4567-AB12-345678901206}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,18 @@ Global
 		{12091BB3-1FCC-610D-472E-0288C1BF3EB2}.Release|x64.Build.0 = Release|Any CPU
 		{12091BB3-1FCC-610D-472E-0288C1BF3EB2}.Release|x86.ActiveCfg = Release|Any CPU
 		{12091BB3-1FCC-610D-472E-0288C1BF3EB2}.Release|x86.Build.0 = Release|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Debug|x64.Build.0 = Debug|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Debug|x86.Build.0 = Debug|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Release|x64.ActiveCfg = Release|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Release|x64.Build.0 = Release|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6A7B8C9-D0E1-4567-AB12-345678901206}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

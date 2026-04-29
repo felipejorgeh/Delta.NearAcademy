@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delta.NearAcademy.Student.I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delta.NearAcademy.Core.Domain", "..\Core\Delta.NearAcademy.Core.Domain\Delta.NearAcademy.Core.Domain.csproj", "{12091BB3-1FCC-610D-472E-0288C1BF3EB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delta.NearAcademy.Student.Test", "Delta.NearAcademy.Student.Test\Delta.NearAcademy.Student.Test.csproj", "{17283940-5060-4738-AB12-345678901207}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +98,18 @@ Global
 		{12091BB3-1FCC-610D-472E-0288C1BF3EB2}.Release|x64.Build.0 = Release|Any CPU
 		{12091BB3-1FCC-610D-472E-0288C1BF3EB2}.Release|x86.ActiveCfg = Release|Any CPU
 		{12091BB3-1FCC-610D-472E-0288C1BF3EB2}.Release|x86.Build.0 = Release|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Debug|x64.Build.0 = Debug|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Debug|x86.Build.0 = Debug|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Release|x64.ActiveCfg = Release|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Release|x64.Build.0 = Release|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Release|x86.ActiveCfg = Release|Any CPU
+		{17283940-5060-4738-AB12-345678901207}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
