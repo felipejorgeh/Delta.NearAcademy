@@ -10,4 +10,6 @@ public class StudentService : IStudentService
     }
 
     public List<Student> GetStudents() => _repository.GetStudents();
+
+    public void AddStudent(AddStudentDto dto) => _repository.AddStudent(dto);
 }

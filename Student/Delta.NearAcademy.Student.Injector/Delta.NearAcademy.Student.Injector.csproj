@@ -5,7 +5,6 @@
     <ProjectReference Include="..\Delta.NearAcademy.Student.Domain\Delta.NearAcademy.Student.Domain.csproj" />
     <ProjectReference Include="..\Delta.NearAcademy.Student.Repository\Delta.NearAcademy.Student.Repository.csproj" />
     <ProjectReference Include="..\Delta.NearAcademy.Student.Business\Delta.NearAcademy.Student.Business.csproj" />
-    <ProjectReference Include="..\Delta.NearAcademy.Student.Web\Delta.NearAcademy.Student.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>

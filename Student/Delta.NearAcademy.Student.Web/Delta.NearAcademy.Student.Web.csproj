@@ -3,13 +3,16 @@
   <ItemGroup>
     <ProjectReference Include="..\Delta.NearAcademy.Student.Domain\Delta.NearAcademy.Student.Domain.csproj" />
     <ProjectReference Include="..\Delta.NearAcademy.Student.Business\Delta.NearAcademy.Student.Business.csproj" />
-    <ProjectReference Include="..\..\Core\Delta.NearAcademy.Core.Domain\Delta.NearAcademy.Core.Domain.csproj" />
+    <ProjectReference Include="..\Delta.NearAcademy.Student.Injector\Delta.NearAcademy.Student.Injector.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<OutputPath>..\..\..\output\</OutputPath>
+	<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

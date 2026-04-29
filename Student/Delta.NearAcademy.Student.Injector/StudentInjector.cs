@@ -12,7 +12,8 @@ public class StudentInjector : IInjector
         builder.Services.AddDbContext<NearAcademyDbContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-        builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+        //builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+        builder.Services.AddSingleton<IStudentRepository, MockStudentRepository>();
         builder.Services.AddScoped<IStudentService, StudentService>();
         builder.Services.AddScoped<IStudentApplication, StudentApplication>();
     }

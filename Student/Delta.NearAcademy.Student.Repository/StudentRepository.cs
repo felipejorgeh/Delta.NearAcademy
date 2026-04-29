@@ -20,4 +20,16 @@ public class StudentRepository : IStudentRepository
             })
             .ToList();
     }
+
+    public void AddStudent(AddStudentDto dto)
+    {
+        var entity = new StudentEntity
+        {
+            Name = dto.Name,
+            Email = dto.Email
+        };
+
+        _context.Students.Add(entity);
+        _context.SaveChanges();
+    }
 }

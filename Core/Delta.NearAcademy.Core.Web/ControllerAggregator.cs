@@ -1,6 +1,5 @@
-using System.Reflection;
-using Delta.NearAcademy;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,7 +11,7 @@ public static class ControllerAggregator
     {
         var loadedAssemblies = AppDomain.CurrentDomain.GetAssemblies();
 
-        var controllerServiceType = typeof(IControllerService);
+        var controllerServiceType = typeof(ControllerBase);
         var controllerAssemblies = loadedAssemblies
             .Where(a => a.GetTypes().Any(t =>
                 t is { IsClass: true, IsAbstract: false } && controllerServiceType.IsAssignableFrom(t)))

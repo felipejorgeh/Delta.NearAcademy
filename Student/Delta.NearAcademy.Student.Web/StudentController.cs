@@ -1,11 +1,10 @@
-using Delta.NearAcademy;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Delta.NearAcademy.Student;
 
 [ApiController]
 [Route("api/[controller]")]
-public class StudentController : ControllerBase, IControllerService
+public class StudentController : ControllerBase
 {
     private readonly IStudentApplication _application;
 
@@ -18,5 +17,12 @@ public class StudentController : ControllerBase, IControllerService
     public ActionResult<List<Student>> GetStudents()
     {
         return Ok(_application.GetStudents());
+    }
+
+    [HttpPost]
+    public IActionResult AddStudent([FromBody] AddStudentDto dto)
+    {
+        _application.AddStudent(dto);
+        return Created();
     }
 }
