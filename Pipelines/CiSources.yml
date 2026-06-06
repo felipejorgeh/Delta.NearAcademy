@@ -18,6 +18,8 @@ resources:
       branches:
         include:
           - master
+          - Features/*
+          - Releases/*
 variables:
 - name: GIT_SSL_NO_VERIFY
   value: 'true' 
