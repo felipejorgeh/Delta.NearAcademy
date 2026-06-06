@@ -1,0 +1,57 @@
+name: $(date:yyyyMMdd)$(rev:.r)
+schedules:
+- cron: 0 3 * * *
+  branches:
+    include:
+    - master
+  always: true
+
+resources:
+  repositories:
+  - repository: Delta.NearAcademy
+    type: git
+    name: 'Delta.NearAcademy'
+    trigger:
+      paths: 
+        include:
+        - '*'
+      branches:
+        include:
+          - master
+variables:
+- name: GIT_SSL_NO_VERIFY
+  value: 'true' 
+- name: BuildPlatform
+  value: 'Any cpu'
+- name: BuildConfiguration
+  value: 'Debug'
+  
+jobs:
+- job: Job_1
+  workspace:
+      clean: all
+  displayName: Build all
+  pool:
+    name: Default
+  steps:
+  - checkout: self
+    fetchDepth: 1
+    path: 's\Sources'
+    clean: true
+  - task: NuGetToolInstaller@1
+    displayName: 'Use NuGet '
+  - task: VSBuild-sxs@1
+    displayName: Visual Studio Build solution **/*.sln
+    inputs:
+      solution: '**/*.sln'
+      msbuildArgs: /restore
+      platform: $(BuildPlatform)
+      configuration: $(BuildConfiguration)
+      clean: false
+  - task: PowerShell@2
+    displayName: Delete sourcesDirectory
+    inputs:
+        targetType: 'inline'
+        script: 'Remove-Item "$(Build.SourcesDirectory)\*" -Recurse -Force'
+    condition: always()
+...
