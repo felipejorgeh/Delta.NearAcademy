@@ -1,1 +1,3 @@
 This project has been developed as a Bachelor's Final Thesis in Computer Engineering at the Universidad Internacional de La Rioja (UNIR), under the title: "Definition and Work Methodology of a Software Development Team".
+
+https://github.com/felipejorgeh/Delta.NearAcademy/blob/main/Docs/DefinicionMetodologiaTrabajoEquipoDesarrolloSoftware.pdf
